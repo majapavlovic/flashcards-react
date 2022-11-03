@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 
 function Flashcard({flashcard}) {
   return (
@@ -7,6 +6,7 @@ function Flashcard({flashcard}) {
       <div className="card-body">
         <h5 className="card-title">{flashcard.question}</h5>
         <p className="card-text">{flashcard.answer}</p>
+        <span style={{float:"right"}}>{flashcard.category}</span>
       </div>
     </div>
   )

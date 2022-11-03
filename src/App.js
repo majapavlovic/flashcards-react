@@ -10,20 +10,22 @@ function App() {
   const [flashcards, setFlashcards] = useState([
     {
       id: 1,
-      question: "what is a cell?",
-      answer:
-        " the basic membrane-bound unit that contains the fundamental molecules of life and of which all living things are composed.",
+      question: "What is a cell?",
+      answer:"Cell is the basic membrane-bound unit that contains the fundamental molecules of life and of which all living things are composed.",
+      category: "Biology"
     },
     {
       id: 2,
       question: "What is the capital city of Serbia?",
       answer: "Belgrade",
+      category: "Geography"
+
     },
     {
       id: 3,
       question: "What started World War 2 and why?",
-      answer:
-        "Hitler's invasion of Poland in September 1939 drove Great Britain and France to declare war on Germany, marking the beginning of World War II",
+      answer: "Hitler's invasion of Poland in September 1939 drove Great Britain and France to declare war on Germany, marking the beginning of World War II",
+      category: "History"
     },
   ]);
 

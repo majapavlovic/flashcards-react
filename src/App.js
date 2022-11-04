@@ -29,6 +29,14 @@ function App() {
     },
   ]);
 
+  const [fcardsNum, setfcardsNum] = useState(3);
+
+  function addQuestion(newFcard) {
+    console.log(newFcard);
+    setfcardsNum(fcardsNum+1);
+    setFlashcards(flashcards => [newFcard, ...flashcards]);
+  }
+
   return (
     <BrowserRouter>
       <Navigation/>
@@ -39,7 +47,7 @@ function App() {
         />
         <Route
         path='/add-question'
-        element={<AddQuestion/>}
+        element={<AddQuestion fcardsNum={fcardsNum} onAdd={addQuestion}/>}
         />
       </Routes>
     </BrowserRouter>

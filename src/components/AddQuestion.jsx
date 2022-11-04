@@ -35,7 +35,7 @@ function AddQuestion({fcardsNum, onAdd}) {
         <option value="Music">Music</option>
       </select>
       <label>ID</label>
-      <input type="text" className="form-control" name="id" id="id" rows="3" value={fcardsNum}/><br/>
+      <input type="text" className="form-control" name="id" id="id" rows="3" value={fcardsNum+1}/><br/>
       <button className="form-control btn btn-success" onClick={()=>makeObject()}>Add</button>
     </div>
   )
